@@ -1,0 +1,30 @@
+GET http://localhost:5239/games
+
+###
+GET http://localhost:5239/games/7
+
+
+###
+POST http://localhost:5239/games
+Content-Type: application/json
+
+{
+    "name": "",
+    "genre": "Adventure",
+    "price": 14.99,
+    "releaseDate": "2025-10-14"
+}
+
+###
+PUT http://localhost:5239/games/2
+Content-Type: application/json
+
+{
+    "name": "FC-27",
+    "genre": "Sports",
+    "price": 79.99,
+    "releaseDate": "2026-09-16"
+}
+
+###
+DELETE http://localhost:5239/games/3
